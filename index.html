@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Table Generator</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<body>
+    <input type="text" class="title" placeholder="Insert the table title here..."><input type="text" class="author" placeholder="Insert the author here...">
+    <br><br>
+<div class="input">
+    <input type="number" placeholder="COLUMNS" class="num" id="col" max="100"/> <input type="number" placeholder="ROWS" class="num" id="rig" max="300"/>
+    <button onclick="create()" id="create">CREATE</button>
+</div>
+<div class="footer">
+    <p><span class="big">simpletable.cf</span><br><a onclick="print()">Print</a> &middot; <a onclick="document.location.reload()">Clear</a></p>
+</div>
+<script>
+window.addEventListener("load", function() {
+    if(window.innerWidth < 1000) {
+        this.location.href = "./small.html"
+    }
+})
+</script>
+</body>
